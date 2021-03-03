@@ -1,0 +1,20 @@
+{
+  "sc001": {
+    "tc001": {
+      "requestInfo": {
+        "queryString": {
+          "limit": 15,
+          "search_query": "Mumbai",
+          "v": 2
+        },
+        "requestBody": {
+        }
+      },
+      "responseInfo": {
+        "expectedResponse": {
+          "SearchSuggestions": [ "Chhatrapati Shivaji International Airport", "Pune Airport", "Ozar Airport", "Shirdi Airport"]
+        }
+      }
+    }
+  }
+}

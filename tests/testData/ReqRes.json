@@ -1,0 +1,30 @@
+{
+  "sc001": {
+    "tc001": {
+      "requestInfo": {
+        "queryString": {},
+        "requestBody": {
+          "name": "name1",
+          "job": "Scrum Master"
+        }
+      },
+      "responseInfo": {
+        "expectedResponse": {
+        }
+      }
+    },
+    "tc002": {
+      "requestInfo": {
+        "queryString": {},
+        "requestBody": {
+          "name": "name2",
+          "job": "Project Manager"
+        }
+      },
+      "responseInfo": {
+        "expectedResponse": {
+        }
+      }
+    }
+  }
+}
