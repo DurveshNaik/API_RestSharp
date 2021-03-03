@@ -7,7 +7,7 @@ namespace TestAssignmentProject.utilities
 {
     class fileOperations
     {
-        public static JObject getScenarioSpecificTestData(string filePrefix)
+        public static JObject GetScenarioSpecificTestData(string filePrefix)
         {
             string testDataLocation = System.IO.Path.GetFullPath(@"..\..\..\tests\testData\"+ filePrefix + ".json");
 

@@ -5,7 +5,7 @@ namespace TestAssignmentProject.utilities
 {
     public class ConfigReader
     {   
-        public static Configs getGlobalConfigs()
+        public static Configs GetGlobalConfigs()
         {
             var globalConfigs = GetConfig();
 

@@ -6,7 +6,6 @@ using Newtonsoft.Json.Linq;
 using AventStack.ExtentReports.Reporter;
 using AventStack.ExtentReports;
 using AventStack.ExtentReports.Gherkin.Model;
-using System;
 
 namespace TestAssignmentProject.tests.stepDefinitions
 {
@@ -49,12 +48,12 @@ namespace TestAssignmentProject.tests.stepDefinitions
         }
 
         [BeforeScenario]
-        public void beforeScenario()
+        public void BeforeScenario()
         {
             //driver = WebDriverFactory.getDriver();
             //scenarioContext["driver"] = driver;
 
-            testContext.configs = ConfigReader.getGlobalConfigs();
+            testContext.configs = ConfigReader.GetGlobalConfigs();
             string scenarioTag = scenarioContext.ScenarioInfo.Tags[0];
             testContext.scenariodetails = new ScenarioDetails
             {
@@ -63,7 +62,7 @@ namespace TestAssignmentProject.tests.stepDefinitions
                 title = scenarioContext.ScenarioInfo.Title
             };
 
-            JObject scenarioData = fileOperations.getScenarioSpecificTestData(scenarioTag.Split("_")[0]);
+            JObject scenarioData = fileOperations.GetScenarioSpecificTestData(scenarioTag.Split("_")[0]);
             testContext.testData = scenarioData[scenarioTag.Split("_")[1]] as JObject;
 
             //to capture feature and scenario in extent report

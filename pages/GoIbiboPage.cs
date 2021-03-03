@@ -10,7 +10,7 @@ namespace TestAssignmentProject.pages
         {
             JObject queryStringParams = (JObject)testSpecificData["requestInfo"]["queryString"];
             //JObject requestInfo
-            return RestSharpUtility.callGetAPI(url, queryStringParams);
+            return RestSharpUtility.CallGetAPI(url, queryStringParams);
         }
 
         public bool ValidateSearchSuggestionsInResponse(JObject expectedResponse, JObject actualResponse)

@@ -11,7 +11,7 @@ namespace TestAssignmentProject.utilities
         {
             //String browser = ConfigurationManager.AppSettings["Browser"];
 
-            ConfigReader.getGlobalConfigs();
+            ConfigReader.GetGlobalConfigs();
 
             if (driver == null)
             {

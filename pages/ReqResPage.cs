@@ -14,7 +14,7 @@ namespace TestAssignmentProject.pages
             JObject queryStringParams = (JObject)testSpecificData["requestInfo"]["queryString"];
             JObject requestBody = (JObject)testSpecificData["requestInfo"]["requestBody"];
             //JObject requestInfo
-            return RestSharpUtility.callPostAPI(url, queryStringParams, requestBody);
+            return RestSharpUtility.CallPostAPI(url, queryStringParams, requestBody);
         }
 
         public bool ValidateUserCreatedResponse(JObject expectedResponse, JObject actualResponse)

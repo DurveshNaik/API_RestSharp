@@ -9,7 +9,7 @@ namespace TestAssignmentProject.utilities
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        public static ResponseInfo callGetAPI(string url, JObject queryStrings)
+        public static ResponseInfo CallGetAPI(string url, JObject queryStrings)
         {
             ResponseInfo responseInfo = null;
 
@@ -36,7 +36,7 @@ namespace TestAssignmentProject.utilities
             return responseInfo;
         }
 
-        public static ResponseInfo callPostAPI(string url, JObject queryStrings, JObject requestBody)
+        public static ResponseInfo CallPostAPI(string url, JObject queryStrings, JObject requestBody)
         {
             ResponseInfo responseInfo = null;
 
